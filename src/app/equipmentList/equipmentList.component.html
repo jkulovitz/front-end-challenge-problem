@@ -1,7 +1,7 @@
 <div class="container">
-    <ul>
-        <li *ngFor="let product of equipment">{{product.description}}</li>
-    </ul>
+    <div class="equipment-list">
+        <panel *ngFor="let product of equipment" [product]=product></panel>
+    </div>
     <div *ngIf="errors" class="alert alert-danger" role="alert">
         Oops, something went wrong.
     </div>

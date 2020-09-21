@@ -1,0 +1,13 @@
+<div class="media product-card" [class.bg-warning]="!hasAllData(product)" (click)="toggleDetail()">
+    <div class="align-self-start mr-5 thumbnail-container">
+        <img *ngIf="hasPhotos(product)" [src]=thumbnailPhoto(product) alt="product thumbnail" class="img-thumbnail">
+    </div>
+    <div class="media-body">
+        <h5>{{product.description}}</h5>
+        <span class="badge badge-secondary mr-2">{{product.equipment_type}}</span>
+        <span class="badge badge-primary">{{product.manufacturer}}</span>
+        <div class="product-detail" *ngIf="showDetail">
+            more content goes here
+        </div>
+    </div>
+</div>

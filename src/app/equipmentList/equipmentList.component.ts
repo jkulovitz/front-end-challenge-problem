@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import {Component, OnInit} from '@angular/core';
+import {Component, ContentChildren, OnInit} from '@angular/core';
 import { environment } from 'src/environments/environment';
+import {PanelComponent} from '../panel/panel.component';
 
 @Component({
     selector: 'app-equipment',
@@ -8,6 +9,8 @@ import { environment } from 'src/environments/environment';
     styleUrls: ['./equipmentList.component.css']
 })
 export class EquipmentListComponent implements OnInit {
+    @ContentChildren(PanelComponent)
+
     equipment = [];
     errors: boolean = false;
 

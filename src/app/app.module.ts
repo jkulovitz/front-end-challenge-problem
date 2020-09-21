@@ -8,12 +8,14 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {BackendInterceptor} from './backend-interceptor/BackendInterceptor';
 import {HomeComponent} from './home/home.component';
 import {EquipmentListComponent} from './equipmentList/equipmentList.component';
+import {PanelComponent} from './panel/panel.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         HomeComponent,
-        EquipmentListComponent
+        EquipmentListComponent,
+        PanelComponent
     ],
     imports: [
         BrowserModule,

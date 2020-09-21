@@ -1,1 +1,8 @@
-<p>component list</p>
+<div class="container">
+    <ul>
+        <li *ngFor="let product of equipment">{{product.description}}</li>
+    </ul>
+    <div *ngIf="errors" class="alert alert-danger" role="alert">
+        Oops, something went wrong.
+    </div>
+</div>
